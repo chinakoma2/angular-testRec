@@ -1,0 +1,25 @@
+<div class="col-md-9">
+      <plotly-plot class="center" [data]="graph.data" [layout]="graph.layout"></plotly-plot>
+</div>
+
+<div class="col-md-3">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Ajouter un an :</div>
+        <div class="panel-body">
+            <div>
+                <div class="form-group">
+                    <label for="usr">Annee:</label>
+                    <input type="text" class="form-control" value="2019" [(ngModel)]="anneeVal">
+                </div>
+                <button type="button" class="btn" (click)="drawChartVolumeChange(anneeVal)" formtarget="_blank">Valider</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+				
+				
+    
